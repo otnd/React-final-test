@@ -11,7 +11,6 @@ function Home() {
         setMeals([...res.data.meals])
     }
 
-    console.log(meals)
     return (
         <div>
             <input type="text" placeholder='Search Meals' value={search} onChange={(e) => setSearch(e.currentTarget.value)} />
