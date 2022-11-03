@@ -13,7 +13,7 @@ function Home() {
 
     console.log(meals)
     return (
-        <div style={{ height: height }}>
+        <div>
             <input type="text" placeholder='Search Meals' value={search} onChange={(e) => setSearch(e.currentTarget.value)} />
             <button onClick={searchInput}>Search</button>
             {meals.map(meal => <Card meal={meal} />)}
