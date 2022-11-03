@@ -13,7 +13,7 @@ const MealDetails = () => {
         retrieveMeal(window.history.state.usr.id);
     }, [])
 
-    return <div style={{height: "100vh"}}>
+    return <div>
         {meals && <div>
             <img src={meals[0].strMealThumb} />
             <div>
