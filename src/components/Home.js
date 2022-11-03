@@ -4,13 +4,11 @@ import Card from "./sub/Card";
 
 function Home() {
     const [meals, setMeals] = useState([]);
-    const [height, setHeight] = useState("100vh")
     const [search, setSearch] = useState("");
 
     const searchInput = async () => {
         const res = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`);
         setMeals([...res.data.meals])
-        setHeight("100%")
     }
 
     console.log(meals)
